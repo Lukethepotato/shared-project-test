@@ -1,6 +1,7 @@
-[gd_scene load_steps=250 format=3 uid="uid://du4ojsigu5no8"]
+[gd_scene load_steps=251 format=3 uid="uid://du4ojsigu5no8"]
 
 [ext_resource type="Script" path="res://super_epic_main_menu.gd" id="1_xy02j"]
+[ext_resource type="PackedScene" uid="uid://b27my4eqmim81" path="res://save_button.tscn" id="2_s5ce2"]
 [ext_resource type="Theme" uid="uid://u4g1afpgom1c" path="res://button_theme.tres" id="3_4t5wd"]
 [ext_resource type="Texture2D" uid="uid://bxmbdorbgni8" path="res://funny images/car sheet.png" id="3_75taq"]
 
@@ -1729,6 +1730,7 @@ animations = [{
 
 [node name="Super Epic Main Menu" type="Node"]
 script = ExtResource("1_xy02j")
+button = ExtResource("2_s5ce2")
 
 [node name="bg" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -1769,3 +1771,7 @@ offset_right = 374.0
 offset_bottom = 468.0
 theme = ExtResource("3_4t5wd")
 text = "play"
+
+[node name="save_files lmao" type="Node2D" parent="."]
+
+[connection signal="pressed" from="cool button" to="." method="_on_cool_button_pressed"]

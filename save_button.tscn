@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b27my4eqmim81"]
+
+[ext_resource type="Theme" uid="uid://u4g1afpgom1c" path="res://button_theme.tres" id="1_h6vhi"]
+[ext_resource type="Script" path="res://save_file_button.gd" id="1_mc37j"]
+
+[node name="file1" type="Button"]
+offset_right = 196.0
+offset_bottom = 149.0
+theme = ExtResource("1_h6vhi")
+theme_override_font_sizes/font_size = 59
+text = "file 1
+"
+script = ExtResource("1_mc37j")
