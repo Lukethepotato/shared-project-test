@@ -1,8 +1,8 @@
-[gd_scene load_steps=251 format=3 uid="uid://du4ojsigu5no8"]
+[gd_scene load_steps=251 format=3 uid="uid://c8mxlwtl18w40"]
 
 [ext_resource type="Script" path="res://super_epic_main_menu.gd" id="1_xy02j"]
-[ext_resource type="PackedScene" uid="uid://b27my4eqmim81" path="res://save_button.tscn" id="2_s5ce2"]
-[ext_resource type="Theme" uid="uid://u4g1afpgom1c" path="res://button_theme.tres" id="3_4t5wd"]
+[ext_resource type="PackedScene" uid="uid://b1i51bc4dbjyb" path="res://save_button.tscn" id="2_s5ce2"]
+[ext_resource type="Theme" uid="uid://boddcpx4o066v" path="res://button_theme.tres" id="3_4t5wd"]
 [ext_resource type="Texture2D" uid="uid://bxmbdorbgni8" path="res://funny images/car sheet.png" id="3_75taq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eepdh"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dijy3le3kpj5p"
-path="res://.godot/imported/Crazy Mom.jpg-57dc84494b705cbac3d7753fd01fe110.ctex"
+path="res://.godot/imported/Crazy Mom.jpg-c9270da284db527e128652566e69dd43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Crazy Mom.jpg"
-dest_files=["res://.godot/imported/Crazy Mom.jpg-57dc84494b705cbac3d7753fd01fe110.ctex"]
+source_file="res://funny images/Crazy Mom.jpg"
+dest_files=["res://.godot/imported/Crazy Mom.jpg-c9270da284db527e128652566e69dd43.ctex"]
 
 [params]
 

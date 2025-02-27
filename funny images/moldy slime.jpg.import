@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca0mmd1npbix3"
-path="res://.godot/imported/moldy slime.jpg-091c0bb0f31d7df5efdabfdfe0bd6f7f.ctex"
+path="res://.godot/imported/moldy slime.jpg-2c23fbcc3e3643f3e1fcdd32cb371604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://moldy slime.jpg"
-dest_files=["res://.godot/imported/moldy slime.jpg-091c0bb0f31d7df5efdabfdfe0bd6f7f.ctex"]
+source_file="res://funny images/moldy slime.jpg"
+dest_files=["res://.godot/imported/moldy slime.jpg-2c23fbcc3e3643f3e1fcdd32cb371604.ctex"]
 
 [params]
 

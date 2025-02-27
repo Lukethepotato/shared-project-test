@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b27my4eqmim81"]
+[gd_scene load_steps=3 format=3 uid="uid://b1i51bc4dbjyb"]
 
-[ext_resource type="Theme" uid="uid://u4g1afpgom1c" path="res://button_theme.tres" id="1_h6vhi"]
+[ext_resource type="Theme" uid="uid://boddcpx4o066v" path="res://button_theme.tres" id="1_h6vhi"]
 [ext_resource type="Script" path="res://save_file_button.gd" id="1_mc37j"]
 
 [node name="file1" type="Button"]

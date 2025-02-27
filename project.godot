@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="sharedProjectTest"
+run/main_scene="res://super_epic_main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -27,7 +28,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"goopTimline": "res://goopTimline.dtl"
+"goopTimline": "res://DialogicStuff/goopTimline.dtl"
 }
 layout/style_list=["res://DialogicStuff/Styles/BasicStyle.tres", "res://DialogicStuff/Styles/New_File.tres"]
 layout/default_style="res://DialogicStuff/Styles/BasicStyle.tres"
