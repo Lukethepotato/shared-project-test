@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://c8ueo0csns38k"]
+
+[ext_resource type="Texture2D" uid="uid://bqxf5tt2lqy62" path="res://funny images/fat dude.png" id="1_c40u8"]
+[ext_resource type="Script" path="res://bad_end_main.gd" id="1_visvv"]
+[ext_resource type="FontFile" uid="uid://spe0uh0wvq4x" path="res://fonts/amorlate/Amorlate.ttf" id="2_8mta5"]
+[ext_resource type="Theme" uid="uid://diokm4ja1dns2" path="res://button_theme.tres" id="4_i4w0l"]
+[ext_resource type="Script" path="res://scene_load_button.gd" id="5_cfv05"]
+[ext_resource type="PackedScene" uid="uid://bfbsdo6awu7c2" path="res://super_epic_main_menu.tscn" id="6_f6j10"]
+[ext_resource type="Shader" path="res://PixelDiamondTransitionShader.gdshader" id="7_vkpmb"]
+[ext_resource type="Texture2D" uid="uid://kqd2jmldofyj" path="res://funny images/images (1).png" id="8_t2bxq"]
+[ext_resource type="Script" path="res://PixelTransTweenScript.gd" id="9_3pr2l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vhvmf"]
+shader = ExtResource("7_vkpmb")
+shader_parameter/AspectRatio = 1.5
+shader_parameter/Diamonds = 10.0
+shader_parameter/pixel_size = 0.08
+shader_parameter/height = -1.0
+shader_parameter/disable_pixel = null
+
+[node name="Bad end" type="Node"]
+script = ExtResource("1_visvv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(552.5, 332.5)
+scale = Vector2(22.9186, 8.08537)
+texture = ExtResource("1_c40u8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 124.0
+offset_top = 26.0
+offset_right = 1088.0
+offset_bottom = 332.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.242833, 0.382744, 1, 1)
+theme_override_constants/outline_size = 65
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_outline_size = 55
+theme_override_fonts/normal_font = ExtResource("2_8mta5")
+theme_override_font_sizes/normal_font_size = 111
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0] [shake amp=50.0 freq=510]YOU look like a moran (:"
+tab_size = 24
+
+[node name="scene load button" type="Button" parent="."]
+offset_left = 420.0
+offset_top = 769.0
+offset_right = 638.0
+offset_bottom = 925.0
+theme = ExtResource("4_i4w0l")
+text = "menu"
+script = ExtResource("5_cfv05")
+next_scene = ExtResource("6_f6j10")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_vhvmf")
+position = Vector2(586.5, 338.5)
+scale = Vector2(5.03137, 3.4697)
+texture = ExtResource("8_t2bxq")
+script = ExtResource("9_3pr2l")
+
+[connection signal="pressed" from="scene load button" to="scene load button" method="_on_pressed"]
