@@ -1,7 +1,7 @@
-[gd_scene load_steps=252 format=3 uid="uid://c8mxlwtl18w40"]
+[gd_scene load_steps=251 format=3 uid="uid://bfbsdo6awu7c2"]
 
 [ext_resource type="Script" path="res://super_epic_main_menu.gd" id="1_xy02j"]
-[ext_resource type="Theme" uid="uid://boddcpx4o066v" path="res://button_theme.tres" id="3_4t5wd"]
+[ext_resource type="Theme" uid="uid://diokm4ja1dns2" path="res://button_theme.tres" id="3_4t5wd"]
 [ext_resource type="Texture2D" uid="uid://bxmbdorbgni8" path="res://funny images/car sheet.png" id="3_75taq"]
 
 [sub_resource type="GDScript" id="GDScript_qse3e"]
@@ -25,10 +25,6 @@ _bundled = {
 ", SubResource("GDScript_qse3e")],
 "version": 3
 }
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eepdh"]
-atlas = ExtResource("3_75taq")
-region = Rect2(0, 0, 480, 360)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pr117"]
 atlas = ExtResource("3_75taq")
@@ -1010,9 +1006,6 @@ region = Rect2(1920, 17280, 480, 360)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_eepdh")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_pr117")
 }, {
 "duration": 1.0,
@@ -1765,8 +1758,6 @@ color = Color(0, 0, 0, 1)
 position = Vector2(807, 257)
 sprite_frames = SubResource("SpriteFrames_a5xw4")
 autoplay = "default"
-frame = 199
-frame_progress = 0.463592
 
 [node name="tittle" type="RichTextLabel" parent="."]
 offset_top = 15.0

@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://ywmhn0vnsdno"]
+[gd_scene load_steps=7 format=3 uid="uid://c8ueo0csns38k"]
 
 [ext_resource type="Texture2D" uid="uid://bqxf5tt2lqy62" path="res://funny images/fat dude.png" id="1_c40u8"]
 [ext_resource type="Script" path="res://bad_end_main.gd" id="1_visvv"]
 [ext_resource type="FontFile" uid="uid://spe0uh0wvq4x" path="res://fonts/amorlate/Amorlate.ttf" id="2_8mta5"]
-[ext_resource type="Theme" uid="uid://boddcpx4o066v" path="res://button_theme.tres" id="4_i4w0l"]
+[ext_resource type="Theme" uid="uid://diokm4ja1dns2" path="res://button_theme.tres" id="4_i4w0l"]
 [ext_resource type="Script" path="res://scene_load_button.gd" id="5_cfv05"]
-[ext_resource type="PackedScene" uid="uid://c8mxlwtl18w40" path="res://super_epic_main_menu.tscn" id="6_f6j10"]
+[ext_resource type="PackedScene" uid="uid://bfbsdo6awu7c2" path="res://super_epic_main_menu.tscn" id="6_f6j10"]
 
 [node name="Bad end" type="Node"]
 script = ExtResource("1_visvv")
@@ -35,10 +35,10 @@ text = "[wave amp=50.0 freq=5.0] [shake amp=50.0 freq=510]YOU look like a moran 
 tab_size = 24
 
 [node name="scene load button" type="Button" parent="."]
-offset_left = 413.0
-offset_top = 370.0
-offset_right = 613.0
-offset_bottom = 526.0
+offset_left = 420.0
+offset_top = 769.0
+offset_right = 638.0
+offset_bottom = 925.0
 theme = ExtResource("4_i4w0l")
 text = "menu"
 script = ExtResource("5_cfv05")
