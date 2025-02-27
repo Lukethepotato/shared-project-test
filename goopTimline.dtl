@@ -1,0 +1,48 @@
+Goop: Hi im goop how are you gooping today?
+- thinking about suiside latley
+	Goop: dam that sucks I mean I would to if I had your pot of greed looking mug your raggity ahh
+	[wait time="1.0"]
+	label head jump
+	Goop: im sorry that was mean man, want some head? on the house
+	- yes
+		if {is furry} == false:
+			Goop: well puter here bucko
+			[sound path="res://Sound/sfx/slurping-jelly-201179.mp3" volume="0.0"]
+			[wait time="5.0"]
+			Goop: not so bad for some goop old sport >\:)
+		else:
+			Goop: ok well just unzip and pu...
+			[wait time="0.5" hide_text="false"]
+			Goop: is that...
+			[wait time="0.5" hide_text="false"]
+			[sound path="res://Sound/sfx/cartoon-music-81920.mp3" volume="0.0"]
+			Goop: a TAIL????
+			[wait time="4.0" hide_text="false"]
+			Goop: im gonna lie thats hot
+			Goop: and is that BROWN?!?!
+			Goop: gimme one sec mr pedo
+			[wait time="0.4" hide_text="false"]
+			Goop: THERES A PEDO IN THE PARK!!!
+			[wait time="0.3"]
+			join RandomMom (soccer mom) center [animation="Bounce In" length="0.2" wait="true"]
+			RandomMom (soccer mom): pedo in the park?
+			RandomMom (mad mom): THERES A PEDO IN THE PARK!!!
+			RandomMom (mad mom): KILL HIM!!!!!
+			[sound path="res://Sound/momfigfht.wav" volume="0.0"]
+			[wait time="6.0"]
+			Goop: So now that hes taken care of any of you hot mamas wanna take me out to dinner??
+			Goop: on you of course
+			RandomMom (soccer mom): yes goop we would all love to
+			RandomMom: now kiss us while this dirty man bleeds out on the floor
+			[sound path="res://Sound/sfx/long-kiss-41029.mp3" volume="0.0"]
+			[wait time="1.0"]
+			- get up and fight!
+				Narrorator: you reach up and use all your will to get up
+				Narrorator: but all your bones rupture and you get cancer and you die
+			- die
+				Narrorator: you lie on the grass watching 16 middle aged moms makout with a pile of goop
+				and you die
+- im a furry!
+	set {is furry} = true
+	Goop: man thats disusting! get out of here you freak! CHILDREN LOOK AWAY!!!!
+	jump head jump
