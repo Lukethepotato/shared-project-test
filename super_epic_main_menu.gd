@@ -28,8 +28,8 @@ func _ready() -> void:
 	tween.tween_property($"cool button", "position", Vector2(174,312),2).from(Vector2(0,-200));
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("super cool enter"):
-		pass
+	if event.is_action_pressed("super cool enter") and tween:
+		tween.custom_step(200);
 
 func _process(delta: float) -> void:
 	if save_files_onscreen and Input.is_action_pressed("scroll_up") and $"save_files lmao".position.y < 0:
