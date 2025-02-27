@@ -28,8 +28,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"DialogicStuff/goopTimline": "res://DialogicStuff/goopTimline.dtl",
-"goopTimline": "res://goopTimline.dtl"
+"DialogicStuff/goopTimline": "res://DialogicStuff/goopTimline.dtl"
 }
 layout/style_list=["res://DialogicStuff/Styles/BasicStyle.tres", "res://DialogicStuff/Styles/New_File.tres"]
 layout/default_style="res://DialogicStuff/Styles/BasicStyle.tres"
