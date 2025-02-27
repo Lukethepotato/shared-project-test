@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1i51bc4dbjyb"]
+[gd_scene load_steps=3 format=3 uid="uid://cu17tkjmay5vv"]
 
 [ext_resource type="Theme" uid="uid://boddcpx4o066v" path="res://button_theme.tres" id="1_h6vhi"]
-[ext_resource type="Script" path="res://save_file_button.gd" id="1_mc37j"]
+
+[sub_resource type="GDScript" id="GDScript_qse3e"]
+script/source = "class_name SaveButton
+extends Button
+
+func change_text(new_name := \"fuck you\"):
+	text = new_name;
+"
 
 [node name="file1" type="Button"]
 offset_right = 196.0
@@ -10,4 +17,4 @@ theme = ExtResource("1_h6vhi")
 theme_override_font_sizes/font_size = 59
 text = "file 1
 "
-script = ExtResource("1_mc37j")
+script = SubResource("GDScript_qse3e")
