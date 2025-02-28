@@ -17,13 +17,13 @@ Goop: Hi im goop how are you gooping today?
 			Goop: is that...
 			[wait time="0.5" hide_text="false"]
 			[sound path="cartoon-music-81920.mp3" volume="0.0"]
-			Goop: a TAIL????
+			Goop: [wave amp=10.0 freq=5.0][shake amp=100.0 freq=510] [mood = MAD] a TAIL???? [/shake]
 			[wait time="4.0" hide_text="false"]
-			Goop: im gonna lie thats hot
-			Goop: and is that BROWN?!?!
-			Goop: gimme one sec mr pedo
+			Goop:  im gonna lie thats hot
+			Goop: and is that [wave amp=10.0 freq=5.0][shake amp=100.0 freq=510][color=brown] [mood = MAD] BROWN?!?!![/color] [/shake]
+			Goop:   gimme one sec mr pedo
 			[wait time="0.4" hide_text="false"]
-			Goop: THERES A PEDO IN THE PARK!!!
+			Goop: [wave amp=10.0 freq=5.0][shake amp=100.0 freq=510] [mood = MAD]  THERES A PEDO IN THE PARK!!! [/shake]
 			[wait time="0.3"]
 			join RandomMom (soccer mom) center [animation="Bounce In" length="0.2" wait="true"]
 			RandomMom (soccer mom): pedo in the park?
@@ -31,7 +31,7 @@ Goop: Hi im goop how are you gooping today?
 			RandomMom (mad mom): KILL HIM!!!!!
 			[sound path="res://Sound/momfigfht.wav" volume="0.0"]
 			[wait time="6.0"]
-			Goop: So now that hes taken care of any of you hot mamas wanna take me out to dinner??
+			Goop:  So now that hes taken care of any of you hot mamas wanna take me out to dinner??
 			Goop: on you of course
 			RandomMom (soccer mom): yes goop we would all love to
 			RandomMom: now kiss us while this dirty man bleeds out on the floor

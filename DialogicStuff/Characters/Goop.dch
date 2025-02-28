@@ -5,7 +5,28 @@
 "color": Color(1, 1, 1, 1),
 "custom_info": {
 "sound_mood_default": "Mood 1",
-"sound_moods": {},
+"sound_moods": {
+"MAD": {
+"mode": 0,
+"name": "MAD",
+"pitch_base": 1.8,
+"pitch_variance": 0.0,
+"skip_characters": 1.0,
+"sound_path": "res://Sound/typingSounds/goop",
+"volume_base": 10.0,
+"volume_variance": 0.0
+},
+"Mood 1": {
+"mode": 0,
+"name": "Mood 1",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "res://Sound/typingSounds/goop",
+"volume_base": 0.0,
+"volume_variance": 0.0
+}
+},
 "style": "BasicStyle"
 },
 "default_portrait": "New portrait",
@@ -23,7 +44,7 @@
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": "",
-"sound_mood": "Mood 2"
+"sound_mood": "Mood 1"
 }
 },
 "scale": 1.0
