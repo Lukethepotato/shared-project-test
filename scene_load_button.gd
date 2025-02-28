@@ -13,12 +13,9 @@ func _process(delta: float) -> void:
 	
 
 
-func go_to_next_scene():
-	get_tree().change_scene_to_packed(next_scene);
-
-
 func _on_pressed() -> void:
 	tween = create_tween()
 	tween.tween_property($"../CanvasLayer/Sprite2D".material, "shader_parameter/height", .65, 2)
-	await tween.finished;
-	go_to_next_scene() # Replace with function body.
+	await tween.finished
+	print("work!!!")
+	get_tree().change_scene_to_packed(next_scene) # Replace with function body.

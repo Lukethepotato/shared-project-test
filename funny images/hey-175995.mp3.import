@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cctjp711ofuoy"
+path="res://.godot/imported/hey-175995.mp3-8d7bf3a6bfc848c36978f72f31213699.mp3str"
+
+[deps]
+
+source_file="res://funny images/hey-175995.mp3"
+dest_files=["res://.godot/imported/hey-175995.mp3-8d7bf3a6bfc848c36978f72f31213699.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
