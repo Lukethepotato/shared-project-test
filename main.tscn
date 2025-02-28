@@ -97,6 +97,7 @@ shape = SubResource("RectangleShape2D_4lalb")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("9_okf5m")
+next_scene = "res://bad_end.tscn"
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_mtbvh")

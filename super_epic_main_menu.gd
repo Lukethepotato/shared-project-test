@@ -1,7 +1,7 @@
 extends Node
 
 @export var button : PackedScene;
-@export var next_scene : PackedScene;
+@export_file() var next_scene
 var tween;
 var save_files_onscreen := false;
 
@@ -60,4 +60,4 @@ func populate_save_file_buttons(count := 1):
 		new_button.connect("pressed", go_to_next_scene);
 
 func go_to_next_scene():
-	get_tree().change_scene_to_packed(next_scene);
+	get_tree().change_scene_to_file(next_scene)

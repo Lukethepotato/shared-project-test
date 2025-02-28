@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://c8ueo0csns38k"]
+[gd_scene load_steps=10 format=3 uid="uid://c8ueo0csns38k"]
 
 [ext_resource type="Texture2D" uid="uid://bqxf5tt2lqy62" path="res://funny images/fat dude.png" id="1_c40u8"]
 [ext_resource type="Script" path="res://bad_end_main.gd" id="1_visvv"]
 [ext_resource type="FontFile" uid="uid://spe0uh0wvq4x" path="res://fonts/amorlate/Amorlate.ttf" id="2_8mta5"]
 [ext_resource type="Theme" uid="uid://diokm4ja1dns2" path="res://button_theme.tres" id="4_i4w0l"]
 [ext_resource type="Script" path="res://scene_load_button.gd" id="5_cfv05"]
-[ext_resource type="PackedScene" uid="uid://bfbsdo6awu7c2" path="res://super_epic_main_menu.tscn" id="6_f6j10"]
 [ext_resource type="Shader" path="res://PixelDiamondTransitionShader.gdshader" id="7_vkpmb"]
 [ext_resource type="Texture2D" uid="uid://kqd2jmldofyj" path="res://funny images/images (1).png" id="8_t2bxq"]
 [ext_resource type="Script" path="res://PixelTransTweenScript.gd" id="9_3pr2l"]
@@ -53,7 +52,7 @@ offset_bottom = 925.0
 theme = ExtResource("4_i4w0l")
 text = "menu"
 script = ExtResource("5_cfv05")
-next_scene = ExtResource("6_f6j10")
+next_scene = "res://super_epic_main_menu.tscn"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

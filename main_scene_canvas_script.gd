@@ -1,5 +1,5 @@
 extends CanvasLayer
-@export var next_scene: PackedScene
+@export_file var next_scene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,4 +15,4 @@ func _end_shader_transition(dial_param: String):
 		var tween = create_tween()
 		tween.tween_property($Sprite2D.material, "shader_parameter/height", .65, 2)
 		await tween.finished
-		get_tree().change_scene_to_packed(next_scene);
+		get_tree().change_scene_to_file(next_scene);
