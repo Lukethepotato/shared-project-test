@@ -1745,6 +1745,7 @@ animations = [{
 [node name="Super Epic Main Menu" type="Node"]
 script = ExtResource("1_xy02j")
 button = SubResource("PackedScene_nhpxg")
+next_scene = "res://main.tscn"
 
 [node name="bg" type="ColorRect" parent="."]
 anchors_preset = 15

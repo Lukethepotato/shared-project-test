@@ -10,6 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_goop_area_entered(area: Area2D) -> void:
-	pass
+func _on_goop_area_area_entered(area: Area2D) -> void:
+	Dialogic.start("DialogicStuff/goopTimline")# Replace with function body.

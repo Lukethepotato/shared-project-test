@@ -1,0 +1,108 @@
+[gd_scene load_steps=17 format=3 uid="uid://c3s7fwq744qq7"]
+
+[ext_resource type="Texture2D" uid="uid://cq335np77n6hj" path="res://funny images/56823535-DA17-4C89-A872-C34A72F12AB8_1_105_c.jpeg" id="1_osryd"]
+[ext_resource type="Texture2D" uid="uid://djp0j6q6sij7a" path="res://funny images/IMG_3172.png" id="2_wi8eo"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="3_rbiy8"]
+[ext_resource type="Texture2D" uid="uid://df8y0d4xvjdp0" path="res://funny images/IMG_3170.png" id="5_jt7xn"]
+[ext_resource type="Texture2D" uid="uid://cyfp6okweqy66" path="res://funny images/IMG_3169.png" id="6_6ghpi"]
+[ext_resource type="Texture2D" uid="uid://o7musulb0nkn" path="res://funny images/IMG_3171.png" id="7_xacyw"]
+[ext_resource type="Script" path="res://animated_sprite_2d.gd" id="8_y1iow"]
+[ext_resource type="Shader" path="res://PixelDiamondTransitionShader.gdshader" id="9_4b3g4"]
+[ext_resource type="Script" path="res://man_collision.gd" id="9_go8tp"]
+[ext_resource type="Script" path="res://main_scene_canvas_script.gd" id="9_okf5m"]
+[ext_resource type="Texture2D" uid="uid://bqxf5tt2lqy62" path="res://funny images/fat dude.png" id="10_2gve6"]
+
+[sub_resource type="GDScript" id="GDScript_42hvv"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a2uq6"]
+size = Vector2(761.765, 1170.59)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iy02j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_jt7xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6ghpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jt7xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xacyw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lalb"]
+size = Vector2(59.7345, 405.443)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mtbvh"]
+shader = ExtResource("9_4b3g4")
+shader_parameter/AspectRatio = 1.5
+shader_parameter/Diamonds = 10.0
+shader_parameter/pixel_size = 0.08
+shader_parameter/height = -1.0
+shader_parameter/disable_pixel = null
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -2584.0
+offset_top = -2952.0
+offset_right = 5364.0
+offset_bottom = 3009.0
+texture = ExtResource("1_osryd")
+
+[node name="goop" type="Sprite2D" parent="."]
+position = Vector2(1064, 448)
+scale = Vector2(0.34, 0.34)
+texture = ExtResource("2_wi8eo")
+script = ExtResource("3_rbiy8")
+
+[node name="goop_area" type="Area2D" parent="goop"]
+script = SubResource("GDScript_42hvv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="goop/goop_area"]
+position = Vector2(-130.882, -14.7061)
+shape = SubResource("RectangleShape2D_a2uq6")
+
+[node name="man" type="AnimatedSprite2D" parent="."]
+position = Vector2(54.0001, 424)
+scale = Vector2(0.452, 0.452)
+sprite_frames = SubResource("SpriteFrames_iy02j")
+script = ExtResource("8_y1iow")
+
+[node name="man_collision" type="Area2D" parent="man"]
+script = ExtResource("9_go8tp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="man/man_collision"]
+position = Vector2(12.1679, -23.5179)
+shape = SubResource("RectangleShape2D_4lalb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("9_okf5m")
+next_scene = "res://bad_end.tscn"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_mtbvh")
+position = Vector2(552.5, 332.5)
+scale = Vector2(22.9186, 8.08537)
+texture = ExtResource("10_2gve6")
+
+[connection signal="area_entered" from="goop/goop_area" to="man/man_collision" method="_on_goop_area_area_entered"]
